@@ -3,7 +3,12 @@
  */
 public class NewReleasesPrice extends Price {
     @Override
-    int getPriceCoder() {
+    int getPriceCode() {
         return Movie.NEW_RELEASE;
+    }
+
+    double getCharge(int daysRented)
+    {
+        return daysRented * 3;
     }
 }
