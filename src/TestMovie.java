@@ -11,18 +11,18 @@ public class TestMovie {
     @BeforeClass
     public static void init()
     {
- 	    theShack = new Movie("The Shack - A weekend with God.",17);
+ 	    theShack = new Movie("The Shack - A weekend with God.",Movie.NEW_RELEASE);
     }
 
  	@Test
  	public void testGetPriceCode() {
- 		assertEquals(17,theShack.getPriceCode());
+ 		assertEquals(Movie.NEW_RELEASE,theShack.getPriceCode());
  	}
 
  	@Test
  	public void testSetPriceCode() {
- 		theShack.setPriceCode(15);
- 		assertEquals(15,theShack.getPriceCode());
+ 		theShack.setPriceCode(Movie.REGULAR);
+ 		assertEquals(Movie.REGULAR,theShack.getPriceCode());
  	}
 
  	@Test

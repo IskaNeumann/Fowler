@@ -12,7 +12,7 @@ public class TestRental {
     @BeforeClass
     public static void init()
     {
-        theShack = new Movie("The Shack - A weekend with God.",17);
+        theShack = new Movie("The Shack - A weekend with God.",Movie.NEW_RELEASE);
         rental = new Rental(theShack, 5);
     }
 
